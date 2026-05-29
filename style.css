@@ -4,25 +4,170 @@ html {
 }
 
 body {
-    background: rgb(120, 120, 120);
-    color:rgb(223, 220, 220);
+    background-color: rgb(120, 120, 120);
+    color:rgb(220, 220, 220);
     margin:0;
+    overflow-x: hidden;
 }
+
+.source {
+    border-radius: 1cap;
+    margin: 8px;
+    float: right;
+    margin-right: 1em;
+    height: 44px;
+    overflow-x: hidden;
+}
+
+.stuff {
+    border-color: #ffffff;
+    border-width: 3px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    border-style: dashed;
+}
+
+.available {
+    color:rgb(91, 169, 241);
+    margin-left: 0.7em;
+}
+
+/*
+@media all and (min-width: 815px) {
+    .bottom {
+        background-color: rgb(36, 35, 35);
+        padding-bottom: 1px;
+        width: 100%;
+        margin: 0;
+        border: 0;
+        border-top: 0.1em;
+        border-style: solid;
+        border-color: rgb(156, 155, 155);
+        z-index: 1;
+        overflow-x: hidden;
+    }
+
+    .bottomlink {
+        color:rgb(34, 148, 255);
+        overflow-x: hidden;
+    }
+    
+    .TOSText {
+        font-size: 8vw;
+        float: left;
+        margin-left: 5%;
+     }
+    
+    .aside {
+        background: #3d3d3d; 
+        margin-top: -2em;
+        margin-left: 75%;
+        width:2px;
+        height: 15em
+    }
+    
+    .bmargin {
+        margin: 1em;
+        text-align: center;
+    }
+
+    .thesocials {
+        margin-left: 75%; margin-top: -14em;
+    }
+
+    .socialtext {
+        margin-left: 75%;
+    }
+}
+
+@media not all and (min-width: 815px) {
+    .bottom {
+        background-color: rgb(36, 35, 35);
+        padding-bottom: 1px;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border: 0;
+        border-top: 0.1em;
+        border-style: solid;
+        border-color: rgb(156, 155, 155);
+        margin-top: 1em;
+        z-index: 1;
+        overflow-x: hidden;
+    }
+
+    .bottomlink {
+        color:rgb(34, 148, 255);
+        overflow-x: hidden;
+    }
+    
+    .TOSText {
+        font-size: 8vw;
+        text-align: center;
+     }
+    
+    .aside {
+        background: #3d3d3d; 
+        margin-bottom: 0em;
+        width:45%;
+        margin-left: 25%;
+        height: 0.1em;
+        transform: translateY(-4em);
+    }
+    
+    .bmargin {
+        margin: 1em;
+        text-align: center;
+    }
+}*/
 
 .bottom {
     background-color: rgb(36, 35, 35);
-    height: 20em;
+    padding-bottom: 1px;
     width: 100%;
+    height: 100%;
     margin: 0;
     border: 0;
     border-top: 0.1em;
     border-style: solid;
     border-color: rgb(156, 155, 155);
-    margin-top: -9em;
+    margin-top: 1em;
+    z-index: 1;
+    overflow-x: hidden;
 }
 
 .bottomlink {
     color:rgb(34, 148, 255);
+    overflow-x: hidden;
+}
+
+.TOSText {
+    font-size: 8vw;
+    text-align: center;
+}
+
+.thesocials div {
+    display:inline-block;
+}
+
+@media all and (min-width: 815px) {
+    .TOSText {
+        font-size: 4vw;
+        text-align: center;
+    }
+}
+
+.asidetext {
+    color: #3d3d3d;;
+}
+
+.aside {
+    background: #3d3d3d; 
+    margin-bottom: 0em;
+    width:45%;
+    margin-left: 25%;
+    height: 0.1em;
+    transform: translateY(-4em);
 }
 
 .bmargin {
@@ -30,57 +175,100 @@ body {
     text-align: center;
 }
 
-.sec1 {
-    color: rgb(223, 220, 220);
-    background-color: rgb(97,97,97);
-    width:100%;
-    height:20em;
-    margin:8px;
-    margin-top: 6em;
-    border-radius: 5cap;
-}
-.welcometext {
-    transform:translate(3em, 4em);
-    max-width: 140px;
+@media not all and (min-width: 1215px) {
+    .welcometext {
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .welcomedesc {
+        text-align: center;
+        margin-top: -1em;
+        margin-bottom: 1em;
+    }
+
+    .sec1 {
+        color: rgb(223, 220, 220);
+        background-color: rgb(97,97,97);
+        margin:8px;
+        margin-top: 6em;
+        border-radius: 5cap;
+        padding-top: 0.001em;
+        padding-left: 1em;
+        padding-bottom: 1em;
+    }
 }
 
-.welcomedesc {
-    text-align: center;
-    width:60%;
-    margin-left: 20%;
-    margin-top: -1em;
+@media all and (min-width: 1215px) {
+    .welcometext {
+        transform:translate(3em, 4em);
+        max-width: 140px;
+    }
+    
+    .welcomedesc {
+        text-align: center;
+        width:60%;
+        margin-left: 20%;
+        margin-top: -1em;
+        margin-bottom: 1em;
+    }
+
+    .sec1 {
+        color: rgb(223, 220, 220);
+        background-color: rgb(97,97,97);
+        margin:8px;
+        margin-top: 6em;
+        border-radius: 5cap;
+        padding-top: 0em;
+        padding-left: 1em;
+        padding-bottom: 1em;
+    }
 }
 
-.sec2part1 {
+.row {
+    display:flex;
+    flex-direction: row;
+}
+
+.topleft {
+    background-color: rgb(97,97,97);
+    border-radius: 4cap;
     margin:8px;
-    color: rgb(223, 220, 220);
-    background-color: rgb(97,97,97);
-    height:10em;
-    width:49%;
-    transform:translateY(11em);
-    border-radius: 5cap;
+    width:50%;
+    padding-top: 0.5vh;
+    padding-left: 2vw;
+    padding-bottom: 7vh;
 }
-.sec2part2 {
-    color: rgb(223, 220, 220);
+    
+.topright {
     background-color: rgb(97,97,97);
-    height:10em;
-    width:49%;
-    transform:translate(103%, -0.3em);
-    border-radius: 5cap;
-}
-.sec3part1 {
+    border-radius: 4cap;
     margin:8px;
-    color: rgb(223, 220, 220);
-    background-color: rgb(97,97,97);
-    height:10em;
-    width:49%;
-    border-radius: 5cap;
+    width:50%;
+    padding-top: 0.5vh;
+    padding-left: 2vw;
+    padding-bottom: 7vh;
 }
-.sec3part2 {
-    color: rgb(223, 220, 220);
-    background-color: rgb(97,97,97);
-    height:10em;
-    width:49%;
-    transform:translate(103%, -115%);
-    border-radius: 5cap;
+
+@media not all and (min-width:815px) {
+    .row {
+        flex-direction: column;
+    }
+    
+    .topleft {
+        width:auto;
+        text-align: center;
+    }
+    
+    .topright {
+        width:auto;
+        text-align: center;
+    }
+}
+
+
+@media not (min-width:609px) {
+    .stufftext {
+        font-size: 6vw;
+    }
 }

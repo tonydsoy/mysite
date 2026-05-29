@@ -1,6 +1,12 @@
-## tonyweb
-tonyweb is my website, i made it with two accounts, one for school and one for home.
+[![tweb logo ](tonywebprerounded.png)](https://tonydsoy.is-a.dev/)
 
-i finally got around to getting this site on github pages, took me a while but i got everything working.
+this is my website.
 
-this site has 3 main sections as of now: /, /jsbuttonclicker, and /jokes/terms
+offering a bunch of unblocked games since uhh idk i forgot when i started this website tbh.
+
+AND ITS ACTUALLY GOOD GAMES FOR ONCE, I DONT WANT TO HAVE TO SCROLL TO FIND WHAT I WANT TO PLAY
+
+please put suggestions for additions in the issues tab
+
+recently, SMCDSB blocked github.io, unfortunately for them I dont use github.io, I use is-a.dev but i'll give them some credit for at least trying<br>
+also coolmathgames isn't blocked for some reason
